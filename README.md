@@ -103,9 +103,10 @@ All features are merged into a single CSV (final_merged_features.csv).
 1. Clone the Repo
 
    git clone https://github.com/Taghi-Guliyev/eco-signal-trading.git
+
    cd eco-signal-trading
 
-2. Install Required Packages
+3. Install Required Packages
 
 Run the helper script to install necessary libraries:
     
@@ -116,7 +117,9 @@ Run the helper script to install necessary libraries:
 Ensure the following files are manually downloaded and placed in the same directory as the agents:
 
 fert.xlsx	    (Fertilizer index data)
+
 drought.csv  	(Drought index from USDA)
+
 All .py files	(Agent scripts)
 
 ▶️ Running the System
