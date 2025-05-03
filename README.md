@@ -2,17 +2,7 @@
 
 This repository presents a multi-agent quantitative trading system that integrates alternative climate data, macroeconomic indicators, and technical signals to generate alpha on the equity of Archer Daniels Midland (ADM). The strategy is based on machine learning (XGBoost classifier), structured into modular agents for data collection, signal generation, and backtesting.
 
-┌────────────────────────┐
-│   Data Collection Agent│
-└────────────┬───────────┘
-             ↓
-┌───────────────────────────┐
-│ Analysis & Trading Agent  │ ← ML Signal via XGBoost
-└────────────┬──────────────┘
-             ↓
-┌────────────────────────────┐
-│     Backtesting Agent      │ ← Evaluation vs NASDAQ & S&P 500
-└────────────────────────────┘
+<pre> ```text ┌────────────────────────┐ │ Data Collection Agent│ └────────────┬───────────┘ ↓ ┌───────────────────────────┐ │ Analysis & Trading Agent │ ← ML Signal via XGBoost └────────────┬──────────────┘ ↓ ┌────────────────────────────┐ │ Backtesting Agent │ ← Evaluation vs NASDAQ & S&P 500 └────────────────────────────┘ ``` </pre>
 
 🌍 Project Motivation
 
@@ -116,11 +106,11 @@ Run the helper script to install necessary libraries:
 
 Ensure the following files are manually downloaded and placed in the same directory as the agents:
 
-fert.xlsx	    (Fertilizer index data)
+- fert.xlsx	    (Fertilizer index data)
 
-drought.csv  	(Drought index from USDA)
+- drought.csv  	(Drought index from USDA)
 
-All .py files	(Agent scripts)
+- All .py files	(Agent scripts)
 
 ▶️ Running the System
 
@@ -152,21 +142,7 @@ This will sequentially execute:
 
 📁 File Structure
 
-climate-trading-system/
-│
-├── agent/
-│   ├── main.py
-│   ├── data_collection_agent.py
-│   ├── analysis_trading_agent.py
-│   ├── backtesting_agent.py
-│   └── install_libraries.py
-│
-├── data/
-│   ├── fert.xlsx
-│   └── drought.csv
-│
-├── README.md
-└── .gitignore
+<pre> ```text climate-trading-system/ │ ├── agent/ │ ├── main.py │ ├── data_collection_agent.py │ ├── analysis_trading_agent.py │ ├── backtesting_agent.py │ └── install_libraries.py │ ├── data/ │ ├── fert.xlsx │ └── drought.csv │ ├── README.md └── .gitignore ``` </pre>
 
 
 📄 License
