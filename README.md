@@ -154,7 +154,24 @@ This will sequentially execute:
 
 📁 File Structure
 
-<pre> ```text climate-trading-system/ │ ├── agent/ │ ├── main.py │ ├── data_collection_agent.py │ ├── analysis_trading_agent.py │ ├── backtesting_agent.py │ └── install_libraries.py │ ├── data/ │ ├── fert.xlsx │ └── drought.csv │ ├── README.md └── .gitignore ``` </pre>
+```
+climate-trading-system/
+│
+├── agent/
+│   ├── main.py
+│   ├── data_collection_agent.py
+│   ├── analysis_trading_agent.py
+│   ├── backtesting_agent.py
+│   └── install_libraries.py
+│
+├── data/
+│   ├── fert.xlsx
+│   └── drought.csv
+│
+├── README.md
+└── .gitignore
+```
+
 
 
 📄 License
